@@ -3,9 +3,20 @@ import 'package:flutter/material.dart';
 class MyButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // 通过GestureDetector包装空间，实现手势的点击事件
     return new GestureDetector(
       onTap: () {
         print('MyButton was tapped!');
+        // 通过snackBar显示提示
+        final snackBar = new SnackBar(
+          content: new Text("MyButton was tapped!"),
+          action: new SnackBarAction(
+              label: "cancel",
+              onPressed: () {
+                print('cancel');
+              }),
+        );
+        Scaffold.of(context).showSnackBar(snackBar);
       },
       child: new Container(
         height: 36.0,
