@@ -3,6 +3,8 @@ import 'package:flutter_app/container/container.dart';
 import 'package:flutter_app/gesture/InkWell.dart';
 import 'package:flutter_app/http/HttpGet.dart';
 import 'package:flutter_app/http/WebSocketPage.dart';
+import 'package:flutter_app/indicator/AppBarBottomSample.dart';
+import 'package:flutter_app/list/AnimatedListSample.dart';
 import 'package:flutter_app/list/LongList.dart';
 import 'package:flutter_app/list/MultiItemListView.dart';
 import 'package:flutter_app/list/SimpleHorizontalList.dart';
@@ -219,10 +221,16 @@ class MyApp extends StatelessWidget {
 //    );
 
     // WebSocket
-    return new MaterialApp(
-      home: new WebSocketPage(
-          title: "WebSocket Demo",
-          channel: new IOWebSocketChannel.connect('ws://echo.websocket.org')),
-    );
+//    return new MaterialApp(
+//      home: new WebSocketPage(
+//          title: "WebSocket Demo",
+//          channel: new IOWebSocketChannel.connect('ws://echo.websocket.org')),
+//    );
+
+    // 滑动添加和删除的列表
+//    return new AnimatedListSample();
+
+    // 选项卡
+    return new AppBarBottomSample();
   }
 }
