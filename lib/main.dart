@@ -4,7 +4,10 @@ import 'package:flutter_app/gesture/InkWell.dart';
 import 'package:flutter_app/http/HttpGet.dart';
 import 'package:flutter_app/http/WebSocketPage.dart';
 import 'package:flutter_app/indicator/AppBarBottomSample.dart';
+import 'package:flutter_app/indicator/BasicAppBarSample.dart';
+import 'package:flutter_app/indicator/TabbedAppBarSample.dart';
 import 'package:flutter_app/list/AnimatedListSample.dart';
+import 'package:flutter_app/list/ExpansionTileSample.dart';
 import 'package:flutter_app/list/LongList.dart';
 import 'package:flutter_app/list/MultiItemListView.dart';
 import 'package:flutter_app/list/SimpleHorizontalList.dart';
@@ -231,6 +234,16 @@ class MyApp extends StatelessWidget {
 //    return new AnimatedListSample();
 
     // 选项卡
-    return new AppBarBottomSample();
+//    return new AppBarBottomSample();
+
+    // appbar选中
+//    return new BasicAppBarSample();
+
+    // item带有子Item的ListView
+//    return new ExpansionTileSample();
+
+    // TabBar
+    return new TabbedAppBarSample();
   }
+
 }
